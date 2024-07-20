@@ -3,6 +3,8 @@ import Image, { StaticImageData } from "next/image";
 import imageFaille from "../public/images/movies/LA FAILLE.png";
 import imageIdentity from "../public/images/movies/IDENTITY.png";
 import imageLegend from "../public/images/movies/LEGENDES D'AUTOMNE.jpg";
+import imageHaine from "../public/images/movies/fposter,small,wall_texture,square_product,600x600.u1.jpg";
+import imageBad from "../public/images/movies/rhrxeu4wya2z1qzfsjmayh1htpb-310.jpg";
 
 export async function getStaticProps() {
   return {
@@ -53,9 +55,9 @@ export default function Movies() {
   return (
     <div className="mt-4 px-8">
       <header>
-        <h1 className="font-bold text-4xl text-zinc-800">Movies I Recommend</h1>
+        <h1 className="font-bold text-4xl text-zinc-800">Recommendations</h1>
         <p className="text-base mt-2 text-zinc-600">
-          I would like to share with you some movies that I loved. !
+          Voici une sélection de films et séries basés sur vos goûts.
         </p>
       </header>
       <div className="mt-10">
@@ -82,6 +84,12 @@ gap-y-16 mt-8"
             urlDisplay={"CANAL+"}
             imageSrc={imageFaille}
           />
+          <ProjectItem
+            name={"LA HAINE"}
+            url={"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.allocine.fr%2Ffilm%2Ffichefilm-12551%2Fdvd-blu-ray%2F%3Fcproduct%3D1707453&psig=AOvVaw0WQGSNWgDiz_V7frsJ6ObY&ust=1716056004381000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCNDCmvWklYYDFQAAAAAdAAAAABAJ"}
+            urlDisplay={"ALLOCINE"}
+            imageSrc={imageHaine}
+          />
         </ul>
       </div>
       <div className="mt-16">
@@ -91,22 +99,10 @@ gap-y-16 mt-8"
 gap-y-16 mt-8"
         >
           <ProjectItem
-            name={"LEGENDS OF THE FALL"}
-            url={"https://www.netflix.com/sn/title/693960"}
+            name={"BREAKING BAD S3"}
+            url={"https://netflix.com/sn/title/70143836"}
             urlDisplay={"Netflix"}
-            imageSrc={imageLegend}
-          />
-          <ProjectItem
-            name={"IDENTITY"}
-            url={"https://www.imdb.com/title/tt0309698/"}
-            urlDisplay={"imdb.com"}
-            imageSrc={imageIdentity}
-          />
-          <ProjectItem
-            name={"LA FAILLE"}
-            url={"https://www.canalplus.com/cinema/la-faille/h/573097_50002"}
-            urlDisplay={"CANAL+"}
-            imageSrc={imageFaille}
+            imageSrc={imageBad}
           />
         </ul>
       </div>
